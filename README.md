@@ -14,8 +14,8 @@ Before getting started, ensure that you have the following software installed on
 1. Clone the repository:
 
    ```bash
-   git clone <repository_url>
-   cd <repository_directory>
+   git clone https://github.com/jbarribal/game-api.git
+   cd https://github.com/jbarribal/game-api.git
    ```
 
 2. Install the dependencies for both the backend and frontend:
