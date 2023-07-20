@@ -8,9 +8,8 @@ Before getting started, ensure that you have the following software installed on
 Node.js (v16 or higher)
 MongoDB
 Installation
-Clone the repository:
 
-a
+
 bash
 Copy code
 cd backend
