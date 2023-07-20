@@ -6,7 +6,7 @@ This README provides an overview and instructions for setting up and using the M
 
 Before getting started, ensure that you have the following software installed on your system:
 
-- Node.js (v14 or higher)
+- Node.js (v16 or higher)
 - MongoDB
 
 ## Installation
@@ -22,10 +22,10 @@ Before getting started, ensure that you have the following software installed on
 
    ```bash
    cd backend
-   npm install
+   npm i
 
-   cd ../frontend
-   npm install
+   cd frontend
+   npm i
    ```
 
 ## Backend Setup
@@ -33,7 +33,7 @@ Before getting started, ensure that you have the following software installed on
 1. In the `backend` directory, create a `.env` file and configure your MongoDB connection:
 
    ```env
-   MONGODB_URI=<your_mongodb_uri>
+   DATABASE_URL=<your_mongodb_uri>
    PORT=3000
    ```
 
@@ -41,6 +41,7 @@ Before getting started, ensure that you have the following software installed on
 
    ```bash
    cd backend
+   npx prisma generate
    npm start
    ```
 
@@ -48,20 +49,16 @@ Before getting started, ensure that you have the following software installed on
 
 ## Frontend Setup
 
-1. In the `frontend` directory, create a `.env` file and configure the backend API URL:
 
-   ```env
-   REACT_APP_API_URL=http://localhost:3000/api/v1/games
-   ```
 
-2. Start the frontend development server:
+1. Start the frontend development server:
 
    ```bash
    cd frontend
-   npm start
+   npm run dev
    ```
 
-   The frontend development server will run on `http://localhost:3001`.
+   The frontend development server will run on `http://127.0.0.1:5173/`.
 
 ## API Endpoints
 
@@ -75,29 +72,7 @@ The backend exposes the following API endpoints:
 
 ## Usage
 
-- Access the web app by visiting `http://localhost:3001` in your browser.
+- Access the web app by visiting `http://127.0.0.1:5173/` in your browser.
 - The homepage displays a "Hello World!" message. To access the API and view the games, go to `http://localhost:3000/api/v1/games`.
 - Use API clients like Postman or tools like `curl` to interact with the backend API endpoints.
 
-## Contributing
-
-If you want to contribute to this project, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Commit your changes and push the branch to your fork.
-4. Create a pull request and provide a detailed explanation of the changes.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-## Acknowledgments
-
-Thanks to the contributors and anyone whose code was used in this project.
-
-## Contact
-
-If you have any questions or suggestions, feel free to contact us at [your_email@example.com](mailto:your_email@example.com).
-
-Happy gaming! 🎮
