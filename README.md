@@ -47,6 +47,12 @@ Before getting started, ensure that you have the following software installed on
 
    The backend server will run on `http://localhost:3000`.
 
+3. You can seed the database by running:
+
+   ```bash
+   npx prisma db seed
+   ```
+
 ## Frontend Setup
 
 
